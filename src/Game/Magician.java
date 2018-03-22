@@ -4,7 +4,6 @@ public class Magician {
 	
 	protected String nom = "Elma Gician";
 	protected String image = "No Pics";
-	protected String sortNom = "Brazzer X";
 	protected String philtreNom = "philtre de haine";
 	
 	protected int vie = 800;
@@ -12,6 +11,8 @@ public class Magician {
 	
 	int attaqueMagician = attaque;
 	int vieMagician = vie;
+	
+	Sort monSort = new Sort();
 	
 	// infos par default du perso.
 	
@@ -26,7 +27,7 @@ public class Magician {
 	}
 	
 	protected String magicianSortNom() {
-		return sortNom;
+		return monSort.sortNom();
 	}
 	
 	protected String magicianPhiltreNom() {
@@ -34,13 +35,15 @@ public class Magician {
 	}
 	
 	// All Integer (2)
+	protected int MagicianSortDegat() {
+		return monSort.sortDegat();
+	}
 	
-	
-	public int MagicianAttaque() {
+	protected int MagicianAttaque() {
 		return attaqueMagician;
 	}
 	
-	public int magicianVie() {
+	protected int magicianVie() {
 		return vieMagician;
 	}
 	

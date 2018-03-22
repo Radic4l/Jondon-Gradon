@@ -4,7 +4,6 @@ public class Guerrier {
 	
 	protected String nom = "Harren";
 	protected String image = "No Pics";
-	protected String armeNom = "Excaliburne";
 	protected String bouclier = "Boucavlier";
 	
 	int vie = 1500;
@@ -12,6 +11,9 @@ public class Guerrier {
 	int forceGuerrier = force;
 	int vieGuerrier = vie;
 	
+	// New arme
+	
+	Arme monArme = new Arme();
 	
 	// infos par default du perso.
 	
@@ -25,7 +27,8 @@ public class Guerrier {
 	}
 	
 	protected String guerrierArmeNom() {
-		return armeNom;
+		
+		return monArme.armeNom();
 	}
 	
 	protected String GuerrierBouclier() {
@@ -33,15 +36,28 @@ public class Guerrier {
 	}
 	
 	// All integer (2)
-	
-	public int guerrierForce() {
+
+protected int guerrierArmeDegat() {
+		
+		return monArme.armeDegat();
+	}
+
+	protected int guerrierForce() {
 		return forceGuerrier;
 	}
 	
-	public int guerrierVie() {
+	protected int guerrierVie() {
 		return vieGuerrier;
 	}
-}
+}	
+	//////////////////// TEST 
+	/*
+
+	protected int testArmeDegat() {
+		return monArme.armeDegat();
+	} */
+
+
 
 /* Les armes/sorts sont caractérisés par un nom, et un niveau d’attaque, qui lorsqu’ils sont
 	
