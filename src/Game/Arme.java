@@ -12,4 +12,13 @@ public class Arme {
 		return armeDegat;
 	
 	}
+/*
+//////////Convert integer armeDegat toString////////////
+	Arme monArme = new Arme();                        //
+	String test=String.valueOf(monArme.armeDegat());  //
+	protected String test() {                         //
+		return test;                                  //
+	}                                                 //
+////////////////////////////////////////////////////////
+*/
 }

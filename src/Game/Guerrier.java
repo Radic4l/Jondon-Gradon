@@ -41,21 +41,17 @@ public class Guerrier {
 	}
 	
  
-/////////////////start///////////////////  Convert toString method // need refactoring
+/*////////////////start/////////////////// Convert toString method // need refactoring
 
-String test=String.valueOf(monArme.armeDegat());
-protected String test() {
-	return test;
-}
-
-////////////////end/////////////////// Convert toString method // need refactoring
+////////////////end/////////////////// Convert toString method // need refactoring */
 
 //All integer (2)
 
+	/*    Integer de Arme Degats // Utile ? / delete ?
 protected int guerrierArmeDegat() {
 		
 		return monArme.armeDegat();
-	}
+	} */
 
 	protected int guerrierForce() {
 		return forceGuerrier;
@@ -75,8 +71,3 @@ protected int guerrierArmeDegat() {
 
 
 
-/* Les armes/sorts sont caractérisés par un nom, et un niveau d’attaque, qui lorsqu’ils sont
-	
-	utilisés, vont venir augmenter d’autant le niveau d’attaque du joueur.
-
-*/
