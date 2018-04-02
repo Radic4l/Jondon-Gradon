@@ -3,7 +3,7 @@ package Game;
 public class Arme {
 
 	protected String armeNom = "Excaliburne";
-	protected int armeDegat = 300;
+	protected int armeDegat = 50 + (int)(Math.random() * (100 - 1));
 	
 	protected String armeNom() {		
 		return armeNom;

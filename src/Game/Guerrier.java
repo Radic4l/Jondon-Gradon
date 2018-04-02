@@ -2,25 +2,19 @@ package Game;
 
 public class Guerrier {
 
-///////////start////////// infos par default du perso.	
+	// infos par default du perso.	
 	protected String nom = "Harren";
 	protected String image = "No Pics";
 	protected String bouclier = "Boucavlier";
-	
-	int vie = 1500;
+//////////
+	int vie = 100 + (int)(Math.random() * (100 - 1));
 	int force = 500;
 	int forceGuerrier = force;
 	int vieGuerrier = vie;
 	
-/////////start///////// Créer une nouvelle arme
 	
-	Arme monArme = new Arme();
-	
-/////////end///////// Créer une nouvelle arme
+	Arme monArme = new Arme(); // Créer une nouvelle arme
 
-
-
-///////////end////////// infos par default du perso.
 	
 	// All String (4)
 	protected String guerrierNom() {
@@ -39,11 +33,6 @@ public class Guerrier {
 	protected String GuerrierBouclier() {
 		return bouclier;
 	}
-	
- 
-/*////////////////start/////////////////// Convert toString method // need refactoring
-
-////////////////end/////////////////// Convert toString method // need refactoring */
 
 //All integer (2)
 
@@ -63,11 +52,7 @@ protected int guerrierArmeDegat() {
 }	
 
 	//////////////////// TEST 
-	/*
 
-	protected int testArmeDegat() {
-		return monArme.armeDegat();
-	} */
 
 
 

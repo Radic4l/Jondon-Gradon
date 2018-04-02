@@ -4,20 +4,35 @@ import java.util.Scanner;
 
 public class inputUser {
 	
-	Scanner scStr = new Scanner(System.in);
-	Scanner scInt = new Scanner(System.in);
+	Scanner sc = new Scanner(System.in);
+	
+	int ChoixJoueur;
 	
 	protected void Choix() {
-		scStr = new Scanner(System.in);
-		System.out.println("Veuillez saisir un nombre :");
-		int inputInt = scInt.nextInt();
-		System.out.println("Vous avez saisi le nombre : " + inputInt);
-	} 
+		
+		System.out.println("Faite votre choix");
+		ChoixJoueur = sc.nextInt();
+		
+		// int inputInt = sc.nextInt();
+		
+		// System.out.println("Vous avez saisi le nombre : " + inputInt);
+		
+		
+/*		int test = inputInt;
+		
+		protected int test1 {
+			return test1;
+
+		}
+		*/
+	}
+	protected int joueurChoix() {
+		return ChoixJoueur;
+	}
 
 	protected void Choix2() { 
-		scStr = new Scanner(System.in);
-		System.out.println("Veuillez saisir une phrase :");
-		String inputString = scStr.nextLine();
+		
+		String inputString = sc.nextLine();
 		System.out.println("Vous avez saisi la phrase : " + inputString);
 	}
 }

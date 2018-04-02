@@ -10,20 +10,27 @@ public class gameStart {
 			
 		////////////////// Mes Instances de Classes
 		// Mon guerrier
-		Guerrier monGuerrier = new Guerrier(); // Nouvelle instance guerrier
+//		Guerrier monGuerrier = new Guerrier(); // Nouvelle instance guerrier
 		// Scanner
-		inputUser userInput = new inputUser(); // Nouvelle instance de mon Scanner
+//		inputUser userInput = new inputUser(); // Nouvelle instance de mon Scanner
 		// Mon Arme
-		Arme monArme = new Arme();
+//		Arme monArme = new Arme();
 		// convert
-		Convert showDgt = new Convert();
+//		Convert showDgt = new Convert();
+		do {
+			gameControl.test();
+		}while(gameControl.exit != true);
+		
+		
+		// gameMenu GameMenu = new gameMenu();
 		// Clear terminal
-//		Clear Clear = new Clear();
+		// Clear clearWindow = new Clear();
 		//////////////////
 		
 		// Affichage de mon Guerrier
-		Game.Clear.clearScreen();
-		System.out.println("");
+		//Game.Clear.clearScreen();
+		
+		/*		System.out.println("");
 		System.out.println("");
 		System.out.println("------------------------------Jondons & Gradons------------------------------");
 		System.out.println("");
@@ -40,14 +47,45 @@ public class gameStart {
 		System.out.println("  Mon int s'affiche en String et affiche les dégats de " + monArme.armeNom() + "\r\r  Elle possède un montant de '" + showDgt.showStr() + "' de Dégats !");
 		System.out.println("");
 		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-		System.out.println("");
-		System.out.println("");
+		System.out.println("1 : Afficher le menu");
+		System.out.println("2 : Exit");
+		
+		//GameMenu.menuPrincipal();
+		
 		userInput.Choix(); // Prise de commandes / need refactoring.
-		userInput.Choix2();
-		userInput.Choix();
+		int reponse = userInput.joueurChoix();
+		
+		switch (reponse) {
+		case 1:
+			gameMenu.menuDeJeu();
+			userInput.Choix();
+			reponse = userInput.joueurChoix();
+		case 2:
+			//new ProcessBuilder("cmd", "/c", "cls");
+			//ProcessBuilder clear = new ProcessBuilder();
+			//ProcessBuilder();
+			// int test = ProcessBuilder();
+			gameControl.test();
+			break;
+		case 3:	
+			gameMenu.Exit();
+		default :
+			
+			
+			
+		} */
 	}
+	
+
+	/*private static void ProcessBuilder() {
+		return ProcessBuilder();
+		// TODO Auto-generated method stub
+		
+	} */
 
 }
+
+
 
 ////commande clear terminal
 /* public static void clear() {
