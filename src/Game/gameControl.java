@@ -1,55 +1,65 @@
-package Game;
+package game;
 
 // import java.util.Scanner;
 
-public class gameControl {
+public class GameControl {
 	
-	static boolean exit = false;
+	static boolean exitGame = false;
 	
-	public static boolean exit(boolean quitteJeu) {
-		return quitteJeu;
+ public static boolean exit() {
+		return exitGame;
 	}
 
 	public static void test() {
 		
+		
 		inputUser userInput = new inputUser();		
 		
-		menuPrincipal.menuPrincip();
+		
 		
 		userInput.Choix();
 		
-		int Choix = userInput.joueurChoix();
+		int choix = userInput.joueurChoix();
 		
 		// int Menu = 1; // Menu  / Principal utile ?
 		 
+		System.out.println("before while : ta reponse connard ======>" + choix);
+		boolean quittMenu = false;
+		while(! quittMenu) {
+			
 		
-	
-			switch (Choix) {
+			switch (choix) {
 			
 			case 1:
 				gameMenu.menuDeJeu();
 			//	System.out.println("Choix '1' en maintenance");
 				userInput.Choix();
-				Choix = userInput.joueurChoix();
+				choix = userInput.joueurChoix();
+				System.out.println("while case 1 : ta reponse connard ======>" + choix);
+				
 				break;
 			
 			case 2: 
-				System.out.println("Choix '2'en maintenance");
-				exit = true;
+				//System.out.println("Choix '2'en maintenance");
+				exitGame = true;
+				System.out.println("while case 2 : ta reponse connard ======>" + choix);
 				System.out.println("Bye Bye");
 				break;
 				
 			case 3:
-				detailsPerso.persoDetails();
+				DetailsPerso.persoDetails();
 				userInput.Choix();
-				Choix = userInput.joueurChoix();
+				choix = userInput.joueurChoix();
+				System.out.println("while case 3 : ta reponse connard ======>" + choix);
 				break;
+				
 			case 4:
-				menuPrincipal.menuPrincip();
-				userInput.Choix();
-				Choix = userInput.joueurChoix();
+				MenuPrincipal.menuPrincipal();
+				choix = 1;
+				System.out.println("Vous quitter le menu");
+				quittMenu = true;
 				break;
-		
+			} 
 			
 		
 	

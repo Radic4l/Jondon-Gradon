@@ -1,6 +1,6 @@
-package Game;
-
-public class detailsPerso {
+package game;
+// Menu 3
+public class DetailsPerso {
 
 	public static void persoDetails() {
 		Guerrier monGuerrier = new Guerrier();

@@ -1,4 +1,4 @@
-package Game;
+package game;
 
 import java.util.Scanner;
 
@@ -12,7 +12,8 @@ public class inputUser {
 		
 		System.out.println("Faite votre choix");
 		ChoixJoueur = sc.nextInt();
-		
+		sc.nextLine();
+		System.out.println("choixjoueur="+ChoixJoueur);
 		// int inputInt = sc.nextInt();
 		
 		// System.out.println("Vous avez saisi le nombre : " + inputInt);

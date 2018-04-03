@@ -1,8 +1,8 @@
-package Game;
-
-public class menuPrincipal {
+package game;
+// Menu 1
+public class MenuPrincipal {
 	
-	public static void menuPrincip() {
+	public static void menuPrincipal() {
 		
 		System.out.println("");
 		System.out.println("");

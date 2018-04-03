@@ -1,10 +1,10 @@
-package Game; // Mes packages
+package game; // Mes packages
 
 // Mes Imports
 
 
 
-public class gameStart {
+public class GameStart {
 
 	public static void main(String[] args) { // Point d'entré de mon programme.
 			
@@ -17,9 +17,13 @@ public class gameStart {
 //		Arme monArme = new Arme();
 		// convert
 //		Convert showDgt = new Convert();
-		do {
-			gameControl.test();
-		}while(gameControl.exit != true);
+			
+		
+		GameControl.exitGame = false;
+		MenuPrincipal.menuPrincipal();
+		while(! GameControl.exitGame) {
+			GameControl.test();
+		}
 		
 		
 		// gameMenu GameMenu = new gameMenu();
@@ -30,26 +34,8 @@ public class gameStart {
 		// Affichage de mon Guerrier
 		//Game.Clear.clearScreen();
 		
-		/*		System.out.println("");
-		System.out.println("");
-		System.out.println("------------------------------Jondons & Gradons------------------------------");
-		System.out.println("");
-		System.out.println("                                 Infos Heros                                 ");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("                        Votre guerrier se nomme " + monGuerrier.guerrierNom().toUpperCase() + " !");
-		System.out.println("");
-		System.out.println("                        Il possède une vie d'un total de " + monGuerrier.guerrierVie() + " !");
-		System.out.println("");
-		System.out.println("                        Il possède la célèbre épée " + monGuerrier.guerrierArmeNom() + " !");
-		System.out.println("");
-		//// Test de conversion integer to string // status Ok // need refactoring.
-		System.out.println("  Mon int s'affiche en String et affiche les dégats de " + monArme.armeNom() + "\r\r  Elle possède un montant de '" + showDgt.showStr() + "' de Dégats !");
-		System.out.println("");
-		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-		System.out.println("1 : Afficher le menu");
-		System.out.println("2 : Exit");
-		
+		/*
+		 * 
 		//GameMenu.menuPrincipal();
 		
 		userInput.Choix(); // Prise de commandes / need refactoring.

@@ -1,6 +1,6 @@
-package Game;
-
-public class gameMenu extends gameStart{
+package game;
+// Menu 2
+public class gameMenu extends GameStart{
 	
 	
 	
@@ -18,7 +18,8 @@ public class gameMenu extends gameStart{
 		System.out.println("_________________________________________|");
 		
 	}
-	public static void Exit() {
+	
+	public static void exit() {
 		Clear.clearConsole();
 		System.out.println("Bye Bye !");
 	}
