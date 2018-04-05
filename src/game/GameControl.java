@@ -31,7 +31,7 @@ public class GameControl {
 			switch (choix) {
 			
 			case 1:
-				gameMenu.menuDeJeu();
+				GameMenu.menuDeJeu();
 			//	System.out.println("Choix '1' en maintenance");
 				userInput.Choix();
 				choix = userInput.joueurChoix();

@@ -1,6 +1,6 @@
 package game;
 // Menu 2
-public class gameMenu extends GameStart{
+public class GameMenu extends GameStart{
 	
 	
 	
